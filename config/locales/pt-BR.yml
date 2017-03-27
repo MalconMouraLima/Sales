@@ -18,13 +18,18 @@ pt-BR:
       sale:
         one: Venda
         other: Vendas
+      discount:
+          one: Desconto
+          other: Descontos
     attributes:
       client:
         name: "Nome"
         company_name: "Nome da Empresa"
         document: "Documento"
         phone: "Telefone"
-
+      discount:
+        name: "Nome"
+        kind: "Tipo"
   views:
   admin:
     home:

@@ -34,6 +34,16 @@ config.navigation_static_label = "Links Úteis"
     navigation_icon 'fa fa-user-o'
   end
 
+config.model Product do
+  create do
+    field :name
+    field :description
+    field :status
+    field :price
+    field :photo
+  end
+end
+
   config.model Sale do
     navigation_icon 'fa fa-money'
     create do

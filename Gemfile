@@ -27,6 +27,13 @@ gem 'cancancan'
 gem 'rails_admin_rollincode', '~> 1.0'
 #gem 'rails_admin_rollincode', :git => 'https://github.com/MalconMouraLima/rollincode_custom.git'
 
+gem 'carrierwave'
+
+# gera pdfs
+#gem 'prawn-rails'
+# gera gráficos
+#gem 'gruff'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

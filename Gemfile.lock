@@ -1,10 +1,3 @@
-GIT
-  remote: https://github.com/MalconMouraLima/rollincode_custom.git
-  revision: 98e873111dae66ad644602402ef00b6342f62237
-  specs:
-    rails_admin_rollincode (1.2.1)
-      rails (>= 4.0, < 6)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -138,6 +131,8 @@ GEM
       rails (>= 4.0, < 6)
       remotipart (~> 1.3)
       sass-rails (>= 4.0, < 6)
+    rails_admin_rollincode (1.2.1)
+      rails (>= 4.0, < 6)
     railties (5.0.2)
       actionpack (= 5.0.2)
       activesupport (= 5.0.2)
@@ -199,7 +194,7 @@ DEPENDENCIES
   puma (~> 3.0)
   rails (~> 5.0.1)
   rails_admin
-  rails_admin_rollincode!
+  rails_admin_rollincode (~> 1.0)
   sass-rails (~> 5.0)
   sqlite3
   turbolinks (~> 5)

@@ -24,8 +24,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'rails_admin'
 gem 'devise'
 gem 'cancancan'
-#gem 'rails_admin_rollincode', '~> 1.0'
-gem 'rails_admin_rollincode', :git => 'https://github.com/MalconMouraLima/rollincode_custom.git'
+gem 'rails_admin_rollincode', '~> 1.0'
+#gem 'rails_admin_rollincode', :git => 'https://github.com/MalconMouraLima/rollincode_custom.git'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

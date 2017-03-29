@@ -1,12 +1,15 @@
 RailsAdmin.config do |config|
 
-config.main_app_name = ["Representantes Comerciais", " Ltda"]
+  require Rails.root.join('lib', 'rails_admin', 'rails_admin_pdf.rb')
+  RailsAdmin::Config::Actions.register(RailsAdmin::Config::Actions::Pdf)
 
-config.navigation_static_links = {
-  'Rails Admin' => 'https://github.com/sferik/rails_admin/wiki/Base-configuration'
-}
+  config.main_app_name = ["Representantes Comerciais", " Ltda"]
 
-config.navigation_static_label = "Links Úteis"
+  config.navigation_static_links = {
+    'Rails Admin' => 'https://github.com/sferik/rails_admin/wiki/Base-configuration'
+  }
+
+  config.navigation_static_label = "Links Úteis"
   ### Popular gems integration
 
   ## == Devise ==
@@ -34,15 +37,16 @@ config.navigation_static_label = "Links Úteis"
     navigation_icon 'fa fa-user-o'
   end
 
-config.model Product do
-  create do
-    field :name
-    field :description
-    field :status
-    field :price
-    field :photo
+  config.model Product do
+    create do
+      field :name
+      field :description
+      field :status
+      field :price
+      field :photo
+      field :photo_addic
+    end
   end
-end
 
   config.model Sale do
     navigation_icon 'fa fa-money'
@@ -185,6 +189,9 @@ end
     edit
     delete
     show_in_app
+    pdf do
+      only User
+    end
 
     ## With an audit adapter, you can add:
     # history_index

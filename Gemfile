@@ -29,9 +29,9 @@ gem 'rails_admin_rollincode', '~> 1.0'
 
 gem 'carrierwave'
 
-# gera pdfs
-#gem 'prawn-rails'
-# gera gráficos
+# Gem para gerar os pdfs
+gem 'prawn-rails'
+# Gem para gerar os gráficos
 #gem 'gruff'
 
 # Use jquery as the JavaScript library

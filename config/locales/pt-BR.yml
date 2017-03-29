@@ -30,6 +30,12 @@ pt-BR:
       discount:
         name: "Nome"
         kind: "Tipo"
+      product:
+        name: "Nome"
+        description: "Descrição"
+        price: "Preço"
+        photo: "Foto"
+        photo_addic: "Foto"
   views:
   admin:
     home:
